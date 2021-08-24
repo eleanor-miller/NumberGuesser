@@ -24,7 +24,7 @@ Explorer Mode
 
 Adventure Mode
 - Allow the user to choose the maximum number for their range. 
-- Tell them the most number of guesses your code will need! 
+- Tell them the most number of guesses your code will need! Log 2
 - Prompt the user to play again at the end of the game. 
 
 Epic Mode
@@ -44,3 +44,22 @@ Epic Mode
 
   C - see Program.cs
 
+S A M P L E  O U T P U T
+
+Greetings. I am the amazing Number Guesser.
+
+Please think of, BUT DO NOT TELL ME, a number between 1 and 1024.
+
+Using my amazing computing power I will figure out your number by asking you questions.
+
+Here we go!
+
+My guess is 1. Is your number HIGHER, LOWER, or am I CORRECT? HIGHER
+
+Ok, higher.
+
+My guess is 2. Is your number HIGHER, LOWER, or am I CORRECT? HIGHER
+
+Ok, higher.
+
+My guess is 3. Is your number HIGHER, LOWER, or am I CORRECT? CORRECT
