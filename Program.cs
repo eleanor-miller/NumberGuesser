@@ -6,6 +6,21 @@ namespace NumberGuesser
     {
         static void Main(string[] args)
         {
+
+          bool again = true;
+
+            do
+            {
+                PlayGame();
+                Console.WriteLine($"Would you like to play again? Yes [Y], No [N] ");
+
+                if (Console.ReadLine().ToUpper() == "N")
+                  break;
+
+            } while (again == true);
+        }
+        static void PlayGame()
+        {
             ShowGreeting();
 
             int low = 1;
@@ -38,41 +53,57 @@ namespace NumberGuesser
 
         static void ShowGreeting()
         {
-          Console.WriteLine();
-          Console.WriteLine("GREETINGS! I AM THE AMAZING NUMBER GUESSER! 🔮");
-          Console.WriteLine();
-          Console.WriteLine("Please think of, BUT DO NOT TELL ME 🤫, a number between 1 and 1024.");
-          Console.WriteLine("Using my amazing computing power I will figure out your number by asking you questions.");
-          Console.WriteLine();
-          Console.WriteLine("Here we go!");
-          Console.WriteLine("🚀🚀🚀");
-          Console.WriteLine();
-          Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("GREETINGS! I AM THE AMAZING NUMBER GUESSER! 🔮");
+            Console.WriteLine();
+            Console.WriteLine("Please think of, BUT DO NOT TELL ME 🤫, a number between 1 and 1024.");
+            Console.WriteLine("Using my amazing computing power I will figure out your number by asking you questions.");
+            Console.WriteLine();
+            Console.WriteLine("Here we go!");
+            Console.WriteLine("🚀🚀🚀");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
         static string IsGuessCorrect(int guess)
         {
-          Console.WriteLine($"My guess is {guess}. ");
+            Console.WriteLine($"My guess is {guess}. ");
 
-           Console.WriteLine($"Is your number HIGHER, LOWER, or am I CORRECT?");
-           return Console.ReadLine().ToUpper();
-         
+            Console.WriteLine($"Is your number HIGHER, LOWER, or am I CORRECT?");
+            return Console.ReadLine().ToUpper();
+
         }
-        
+
         static bool ValidateResponse(string userResponse)
-          {
+        {
             if (userResponse == "CORRECT" || userResponse == "HIGHER" || userResponse == "LOWER")
             {
                 return true;
             }
             else
             {
-              return false;
+                return false;
             }
-          }
+        }
         static void BragWhenCorrect()
         {
-          Console.WriteLine("You are no match for my amazing computing power!");
+            Console.WriteLine("You are no match for my amazing computing power! Muwahahahah 😈");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+      
+
+        static bool ValidateGamePlay(string again)
+        {
+          if (again == "Y" || again == "y")
+          {
+            return true;
+          }
+          else
+          {
+            return false;
+          }
         }
     }
 }

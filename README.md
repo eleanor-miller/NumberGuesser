@@ -34,13 +34,27 @@ Epic Mode
 
   PEDAC
 
-  P - 
+  P - computer must guess what number the user is thinking of between 1 and 1024
 
-  E - 
+  E - use while , if and else if statements to validate user response
 
-  D - 
+  D - low number, high number, guess, userResponse, ShowGreeting, BragWhenCorrect, if statements, bool to validate, do while to prompt player to play again
 
   A - 
+    display greeting
+    prompt user to guess number between 1 and 1024 and not tell us
+    guess number
+    based on user input of higher, lower, or correct 
+      compute 
+        if lower high = guess
+          after user input of lower - next guess should equal (low + high) / 2 
+            repeat until correct
+        if higher low = guess
+         after user input of higher - next guess should equal (low + high) / 2 
+            repeat until correct
+        if correct go to BragWhenCorrect
+        if invalid option given end game
+    
 
   C - see Program.cs
 
